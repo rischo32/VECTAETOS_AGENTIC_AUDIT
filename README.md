@@ -8,7 +8,7 @@
 
 ## 0. Canonical Statement
 
-VECTAETOS Agentic Audit is an applied audit architecture for agentic systems.
+VECTAETOS Agentic Audit™ is an applied audit architecture for agentic systems.
 
 It does not build agents.  
 It does not control agents.  
@@ -31,9 +31,9 @@ non-interpretation
 
 This repository is the canonical public base for:
 
-- VECTAETOS Agentic Audit,
+- VECTAETOS Agentic Audit™,
 - EAI - Epistemic Audit Interface,
-- ContractMesh,
+- ContractMesh™,
 - EAT Ledger,
 - agentic audit artifacts,
 - structural audit reports,
@@ -114,7 +114,7 @@ Agentic Audit Solutions
 
 ## 5. Layer Definitions
 
-### VECTAETOS
+### VECTAETOS™
 
 The non-saleable ontological and epistemic root.
 
@@ -126,7 +126,7 @@ It provides the deeper principle:
 
 ---
 
-### VECTAETOS Agentic Audit
+### VECTAETOS Agentic Audit™
 
 The applied audit architecture for agentic systems.
 
@@ -147,7 +147,7 @@ EAI does not control.
 
 ---
 
-### ContractMesh
+### ContractMesh™
 
 The machine-readable operational contract layer.
 
@@ -431,17 +431,17 @@ The repository is currently in canonical foundation phase.
 
 ## 17. License and Marks
 
-Copyright (c) 2026 Richard Fonfara.
+Copyright (c)(©) 2026 Richard Fonfara.
 
-VECTAETOS, VECTAETOS Agentic Audit, Agentic Audit Solutions, ContractMesh, and EAI are claimed marks of the VECTAETOS Project unless otherwise stated.
+VECTAETOS™, VECTAETOS Agentic Audit™, Agentic Audit Solutions™, ContractMesh™, and EAI are claimed marks of the VECTAETOS™ Project unless otherwise stated.
 
-No use of this repository grants trademark rights, official status, certification rights, or permission to represent derivative systems as official VECTAETOS systems.
+No use of this repository grants trademark rights, official status, certification rights, or permission to represent derivative systems as official VECTAETOS™ systems.
 
 ---
 
 ## 18. Final Statement
 
-VECTAETOS Agentic Audit does not tell the world what is true.
+VECTAETOS Agentic Audit™ does not tell the world what is true.
 
 It shows where structure changes.
 
