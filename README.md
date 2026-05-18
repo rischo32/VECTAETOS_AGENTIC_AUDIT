@@ -1,1 +1,2 @@
-# vectaetos_agentic_audit
+# VECTAETOS AGENTIC AUDIT™
+    powered by EAI + ContractMesh™
