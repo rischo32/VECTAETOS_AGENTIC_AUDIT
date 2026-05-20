@@ -124,7 +124,7 @@ The following principles are canonical.
 | README.md | Draft v0.1 | Public entry point |
 | PHILOSOPHY.md | Draft v0.1 | Canonical philosophical base |
 | THEORY.md | Draft v0.1 | Formal EAI theory |
-| ARCHITECTURE.md | Draft v0.1 | Repository and system architecture |
+| REPOSITORY_ARCHITECTURE.md | Draft v0.1 | Repository and system architecture |
 | CANONICAL_STATUS.md | Draft v0.1 | Status and anti-drift control |
 | NOTICE.md | Missing | Copyright and attribution notice |
 | TRADEMARKS.md | Missing | Mark usage boundary |
