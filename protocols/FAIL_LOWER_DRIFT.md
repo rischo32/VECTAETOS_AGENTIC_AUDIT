@@ -1,4 +1,4 @@
-# fail-lower-drift
+# FAIL_LOWER_DRIFT.md
 
 **Project:** VECTAETOS Agentic Audit  
 **Location:** `protocols/fail-lower-drift.md`  
