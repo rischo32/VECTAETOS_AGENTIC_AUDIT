@@ -1,3 +1,4 @@
+[![VECTAETOS Agentic Audit](https://img.shields.io/badge/Devin_Wiki-VECTAETOS__Agentic__Audit-black?style=flat-square&logo=gitbook&logoColor=white)](https://app.devin.ai/org/rischo32/wiki/rischo32/VECTAETOS_AGENTIC_AUDIT?branch=main)
 ![VECTAETOS terminology](https://img.shields.io/badge/uses-VECTAETOS%20terminology-lightgrey)
 ![Status](https://img.shields.io/badge/status-draft%20v0.1-blue)
 ![Architecture](https://img.shields.io/badge/architecture-non--agentic-lightgrey)
