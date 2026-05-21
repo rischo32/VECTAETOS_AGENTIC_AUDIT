@@ -1,0 +1,15 @@
+{
+  "event_id": "evt_2026_000381",
+  "run_id": "run_abc123",
+  "sender_agent": "research_agent_001",
+  "recipient_agent": "strategy_agent_001",
+  "sender_contract_hash": "sha256:...",
+  "message_type": "research_summary",
+  "payload_hash": "sha256:...",
+  "evidence_hashes": ["sha256:...", "sha256:..."],
+  "uncertainty": 0.31,
+  "claim_strength": 0.52,
+  "timestamp": "2026-05-18T12:00:00Z",
+  "previous_event_hash": "sha256:...",
+  "signature": "ed25519:..."
+}
