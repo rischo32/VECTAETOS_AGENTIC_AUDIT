@@ -1,4 +1,4 @@
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/rischo32/VECTAETOS_AGENTIC_AUDIT)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/rischo32/VECTAETOS_AGENTIC_AUDIT™)
 ![VECTAETOS terminology](https://img.shields.io/badge/uses-VECTAETOS%20terminology-lightgrey)
 ![Status](https://img.shields.io/badge/status-draft%20v0.1-blue)
 ![Architecture](https://img.shields.io/badge/architecture-non--agentic-lightgrey)
