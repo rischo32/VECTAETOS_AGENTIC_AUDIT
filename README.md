@@ -4,7 +4,9 @@
 
 # VECTAETOS_AGENTIC_AUDIT™
 
-**powered by EAI™ + ContractMesh™**
+    VECTAETOS Agentic Audit™
+         └── Agentic Audit Solutions™
+                └── ContractMesh™ / AgentLedger™™
 
 > Verifiable structural auditability for agentic systems.
 
