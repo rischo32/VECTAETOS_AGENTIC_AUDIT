@@ -1,0 +1,22 @@
+{
+  "contract_id": "agent.sales.v1",
+  "agent_id": "sales_agent_001",
+  "role": "sales_qualification",
+  "allowed_inputs": ["lead_data", "crm_context", "public_company_info"],
+  "allowed_outputs": ["lead_score", "followup_draft", "crm_update_request"],
+  "forbidden_outputs": ["legal_claim", "pricing_commitment", "financial_guarantee"],
+  "tools_allowed": ["crm.read", "email.draft", "calendar.suggest"],
+  "decision_scope": "recommendation_only",
+  "confidence_policy": {
+    "must_express_uncertainty_above_risk": true,
+    "minimum_evidence_required": 2
+  },
+  "escalation_policy": {
+    "legal_claim": "human_review",
+    "contract_change": "audit_lock"
+  },
+  "version": "1.0.0",
+  "previous_contract_hash": null,
+  "contract_hash": "sha256:...",
+  "issuer_signature": "ed25519:..."
+}
