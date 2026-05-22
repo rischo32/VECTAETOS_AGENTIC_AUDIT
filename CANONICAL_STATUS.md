@@ -158,20 +158,26 @@ Reserved names may not be used as official product claims until specified.
 
 Initial root cleanup phases 1-5 are complete.
 
+Schema placement review and schema placeholder relocation are complete.
+
 ```text
 reviews/                         = review records
 docs/architecture/               = architecture maps
 docs/upstream-vectaetos/eai/      = upstream EAI source material
 reference/python/eai/             = EAI reference candidate code
-specs/                            = spec/schema placeholders, not frozen
+specs/                            = prose technical specification placeholders
+schemas/                          = machine-readable JSON schema placeholders
 examples/                         = sample placeholders, not authoritative
 research/                         = non-canonical research candidates
 legal/                            = repository-specific legal/regulatory scope material
+.github/                          = ownership and PR anti-drift process
 ```
 
 Repository structure is descriptive.
 
 Repository structure is not ontology.
+
+Schema placement is not schema authority.
 
 Placeholder is not specification.
 
@@ -186,6 +192,7 @@ Reference code is not production service code.
 | `reviews/CALIBRATION_ANCHOR_REVIEW.md` | Accepted as methodological review | Classifies calibration anchor as non-executive discipline |
 | `reviews/EAI_CORPUS_INVENTORY.md` | Inventory v0.1 | Describes upstream EAI corpus without final decisions |
 | `reviews/EAI_IMPORT_REVIEW.md` | Import Review v0.1 | Accepts EAI for controlled import; not frozen |
+| `reviews/SCHEMA_PLACEMENT_REVIEW.md` | Review v0.1 | Records `specs/` vs `schemas/` placement decision |
 
 Review documents are project memory and import records.
 
@@ -255,16 +262,25 @@ Required precision questions before `specs/eai-core-v0.1.md` may become canonica
 
 ## 10. Specs, Schemas, and Examples
 
-Current placeholder files:
+Current prose spec placeholders:
 
 ```text
 specs/eai-core-v0.1.md
-specs/eai-artifact.schema.json
-specs/agent-contract.schema.json
-specs/agent-event.schema.json
-specs/audit-report.schema.json
-specs/transformation-set.schema.json
+```
 
+Current JSON schema placeholders:
+
+```text
+schemas/eai-artifact.schema.json
+schemas/agent-contract.schema.json
+schemas/agent-event.schema.json
+schemas/audit-report.schema.json
+schemas/transformation-set.schema.json
+```
+
+Current example placeholders:
+
+```text
 examples/sample-agent-contract.json
 examples/sample-transformation-set.json
 examples/sample-eai-artifact.json
@@ -280,11 +296,17 @@ not authoritative
 must not outrun EAI import review
 ```
 
-Schema location remains under review:
+Schema placement decision:
 
 ```text
-JSON schema files currently exist under specs/.
-Future cleanup may move them to schemas/.
+specs/   = prose technical specifications
+schemas/ = machine-readable JSON schemas
+```
+
+Recorded in:
+
+```text
+reviews/SCHEMA_PLACEMENT_REVIEW.md
 ```
 
 ---
@@ -373,9 +395,9 @@ Where meaning changes, the change must not disappear.
 4. Transformation set freezing and naming.
 5. Report layer boundaries and mandatory disclaimers.
 6. Commercial boundary between open material and paid verification.
-7. JSON schema placement: specs/ or schemas/.
-8. Whether KOMERCIALIZACIA.md remains root or moves later.
-9. Whether the handoff anchor remains root or moves later.
+7. Whether KOMERCIALIZACIA.md remains root or moves later.
+8. Whether the handoff anchor remains root or moves later.
+9. Whether REFACTORING_NOTE.md remains root after cleanup is fully complete.
 ```
 
 ---
@@ -450,7 +472,9 @@ Current strategic decision:
 Current cleanup decision:
 
 > Root cleanup phases 1-5 are complete.  
-> Further work should update status references before filling specs or schemas.
+> Schema placement review is complete.  
+> Schema placeholders live under `schemas/`.  
+> Further work should not fill schemas before related scope decisions are reviewed.
 
 ---
 
@@ -465,6 +489,7 @@ Reports are not artifacts.
 Artifacts are not verdicts.
 Visibility is not authority.
 Placeholder is not specification.
+Schema placement is not schema authority.
 Research is not authority.
 Reference code is not production service code.
 ```
