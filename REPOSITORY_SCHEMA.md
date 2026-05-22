@@ -3,13 +3,13 @@
 **Project:** VECTAETOS Agentic Audit  
 **Status:** Draft v0.1  
 **Document Type:** Repository structure map  
-**Scope:** Current tracked layout after root cleanup phases 1-5  
+**Scope:** Current tracked layout after root cleanup and schema placement review  
 
 ---
 
 ## 0. Purpose
 
-This file maps the current repository structure after the initial root cleanup.
+This file maps the current repository structure after the initial root cleanup and schema placeholder move.
 
 It is descriptive.
 
@@ -18,6 +18,8 @@ It does not define runtime behavior.
 It does not freeze EAI v0.1.
 
 It does not convert placeholders into specifications.
+
+Repository structure is not ontology.
 
 ---
 
@@ -42,9 +44,9 @@ vectaetos-agentic-audit/
 └── VECTAETOS_AGENTIC_AUDIT_HANDOFF_ANCHOR.md
 ```
 
-Root files are canonical, administrative, commercial-positioning, or cleanup-control files.
+Root files are canonical, administrative, commercial-positioning, handoff, or cleanup-control files.
 
-Temporary upstream EAI source files and EAI reference Python files have been moved out of root.
+Temporary upstream EAI source files, EAI reference Python files, review documents, architecture maps, and JSON schema placeholders have been moved out of root.
 
 ---
 
@@ -54,12 +56,13 @@ Temporary upstream EAI source files and EAI reference Python files have been mov
 reviews/
 ├── CALIBRATION_ANCHOR_REVIEW.md
 ├── EAI_CORPUS_INVENTORY.md
-└── EAI_IMPORT_REVIEW.md
+├── EAI_IMPORT_REVIEW.md
+└── SCHEMA_PLACEMENT_REVIEW.md
 ```
 
-Review files record import and compatibility decisions.
+Review files record import, compatibility, and repository-structure decisions.
 
-They do not define runtime behavior.
+They do not define runtime behavior by themselves.
 
 ---
 
@@ -80,9 +83,11 @@ docs/
         └── mathematics.md
 ```
 
+`docs/architecture/` contains architecture maps.
+
 `docs/upstream-vectaetos/eai/` contains upstream EAI source material.
 
-It is accepted for controlled import, but it is not automatically the final v0.1 specification.
+Upstream EAI material is accepted for controlled import, but it is not automatically the final v0.1 specification.
 
 ---
 
@@ -116,7 +121,34 @@ other protocol files = placeholders unless filled later
 
 ```text
 specs/
-├── eai-core-v0.1.md
+└── eai-core-v0.1.md
+```
+
+Current status:
+
+```text
+specs/ contains prose technical specifications
+specs/eai-core-v0.1.md exists as a placeholder
+specs/ files are not yet canonical technical specifications
+```
+
+Future expected prose specs may include:
+
+```text
+specs/contractmesh-v0.1.md
+specs/eat-ledger-v0.1.md
+specs/audit-artifact-v0.1.md
+specs/agentic-audit-report-v0.1.md
+specs/compatibility-v0.1.md
+specs/invalidity-conditions.md
+```
+
+---
+
+## 6. Schemas
+
+```text
+schemas/
 ├── eai-artifact.schema.json
 ├── agent-contract.schema.json
 ├── agent-event.schema.json
@@ -127,20 +159,27 @@ specs/
 Current status:
 
 ```text
-specs/ files exist as placeholders
-specs/ files are not yet canonical technical specifications
+schemas/ contains machine-readable JSON schema placeholders
+schema files are not yet authoritative
+schema files must not outrun EAI import review or related specs
 ```
 
-Important note:
+Placement decision:
 
 ```text
-Schema file placement is still under review.
-Future cleanup may move JSON schemas from specs/ to schemas/.
+specs/   = prose technical specifications
+schemas/ = machine-readable JSON schemas
+```
+
+This decision is recorded in:
+
+```text
+reviews/SCHEMA_PLACEMENT_REVIEW.md
 ```
 
 ---
 
-## 6. Examples
+## 7. Examples
 
 ```text
 examples/
@@ -155,11 +194,12 @@ Current status:
 ```text
 examples/ files exist as placeholders
 examples/ files must not outrun schemas
+examples/ files are not authoritative until validated against reviewed schemas
 ```
 
 ---
 
-## 7. Reference
+## 8. Reference
 
 ```text
 reference/
@@ -188,7 +228,7 @@ reference code is not yet production-ready service code
 
 ---
 
-## 8. Legal
+## 9. Legal
 
 ```text
 legal/
@@ -199,7 +239,7 @@ The legal scope statement is repository-specific and does not create legal advic
 
 ---
 
-## 9. Research
+## 10. Research
 
 ```text
 research/
@@ -216,7 +256,7 @@ They may guide later product/service work, but they do not override canonical fi
 
 ---
 
-## 10. Papers
+## 11. Papers
 
 ```text
 papers/
@@ -232,7 +272,7 @@ paper content must be reviewed before release or DOI use
 
 ---
 
-## 11. Incubator
+## 12. Incubator
 
 ```text
 incubator/
@@ -245,22 +285,24 @@ Incubator content is non-canonical until reviewed and promoted.
 
 ---
 
-## 12. GitHub Metadata
+## 13. GitHub Metadata
 
 ```text
 .github/
-└── CODEOWNERS
+├── CODEOWNERS
+└── PULL_REQUEST_TEMPLATE.md
 ```
 
-Future expected files:
+Current status:
 
 ```text
-.github/PULL_REQUEST_TEMPLATE.md
+CODEOWNERS defines protected review ownership.
+PULL_REQUEST_TEMPLATE.md defines anti-drift review checklist.
 ```
 
 ---
 
-## 13. Cleanup Status
+## 14. Cleanup Status
 
 Completed cleanup phases:
 
@@ -270,25 +312,28 @@ Phase 2: review documents moved to reviews/
 Phase 3: upstream EAI documents moved to docs/upstream-vectaetos/eai/
 Phase 4: EAI Python reference files moved to reference/python/eai/
 Phase 5: architecture map documents moved to docs/architecture/
+Phase 6: schema placement reviewed
+Phase 7: JSON schema placeholders moved to schemas/
 ```
 
 Remaining structural questions:
 
 ```text
-1. Whether JSON schemas stay in specs/ or move to schemas/.
-2. Whether protocols placeholders should be filled or pruned before v0.1.
-3. Whether research files remain as-is or get classified further.
-4. Whether KOMERCIALIZACIA.md moves under docs/commercial/ or brand/.
-5. Whether the handoff anchor remains root or moves under docs/handoff/.
+1. Whether protocol placeholders should be filled or pruned before v0.1.
+2. Whether research files remain as-is or get classified further.
+3. Whether KOMERCIALIZACIA.md moves under docs/commercial/ or brand/.
+4. Whether the handoff anchor remains root or moves under docs/handoff/.
+5. Whether REFACTORING_NOTE.md remains root after cleanup is fully complete.
 ```
 
 ---
 
-## 14. Non-Drift Reminder
+## 15. Non-Drift Reminder
 
 ```text
 Repository structure is not ontology.
 Placeholder is not specification.
+Schema placement is not schema authority.
 Research is not authority.
 Review is not runtime.
 Reference code is not production service code.
