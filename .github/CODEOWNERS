@@ -1,13 +1,19 @@
 * @rischo32
-/PHILOSOPHY.md
-/THEORY.md
-/ARCHITECTURE.md
-/CANONICAL_STATUS.md
-/NOTICE.md
-/TRADEMARKS.md
-/LICENSE.md
-/specs/
-/schemas/
-/protocols/
-/legal/
-/brand/
+
+/ARCHITECTURE.md /@rischo32
+/README.md @rischo32
+/PHILOSOPHY.md @rischo32
+/THEORY.md @rischo32
+/REPOSITORY_ARCHITECTURE.md @rischo32
+/CANONICAL_STATUS.md @rischo32
+/NOTICE.md @rischo32
+/TRADEMARKS.md @rischo32
+/LICENSE.md @rischo32
+/SECURITY.md @rischo32
+
+/specs/ @rischo32
+/protocols/ @rischo32
+/legal/ @rischo32
+/brand/ @rischo32
+/.github/ @rischo32
+/schemas/ @rischo32
