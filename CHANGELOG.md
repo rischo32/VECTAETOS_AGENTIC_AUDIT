@@ -54,6 +54,39 @@ Pre-v1.0 status:
 
 # [Unreleased]
 
+## Changed
+
+### Root cleanup phases 1-5
+
+Recorded the initial root cleanup sequence.
+
+Completed structural cleanup steps:
+
+```text
+Phase 1: prepared target directories
+Phase 2: moved review documents into reviews/
+Phase 3: moved upstream EAI markdown material into docs/upstream-vectaetos/eai/
+Phase 4: moved EAI Python reference candidate files into reference/python/eai/
+Phase 5: moved architecture map documents into docs/architecture/
+```
+
+Updated repository structure map:
+
+```text
+REPOSITORY_SCHEMA.md
+```
+
+Non-goals preserved:
+
+```text
+No EAI semantic change.
+No spec freeze.
+No schema freeze.
+No verifier implementation.
+No production-service claim.
+No commercial/legal claim change.
+```
+
 ## Planned
 
 ```text
