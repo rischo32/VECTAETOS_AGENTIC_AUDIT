@@ -5,8 +5,8 @@
 **Status:** Draft v0.1  
 **Ontology:** Not frozen  
 **Implementation:** Pre-MVP  
-**Commercial Layer:** Not active  
-**Last Updated:** 2026-05-18  
+**Commercial Layer:** Defined, not production-active  
+**Last Updated:** 2026-05-22  
 
 ---
 
@@ -19,6 +19,8 @@ It is a control document.
 Its purpose is to prevent conceptual drift.
 
 If another file contradicts this file, the contradiction must be reviewed before the repository can advance.
+
+Conversational statements, research notes, placeholders, and reference code are not automatically canonical.
 
 ---
 
@@ -49,153 +51,240 @@ Human Audit Report
 Agentic Audit Solutions
 ```
 
+Layer rule:
+
+```text
+artifact != report
+report != EAI
+ledger != truth proof
+verifier != decision engine
+connector != architecture
+commercial layer != ontology
+```
+
 ---
 
 ## 2. Accepted Names
 
-The following names are accepted for current repository use.
-
 | Name | Status | Role |
 |---|---|---|
-| VECTAETOS | Accepted | Framework root |
+| VECTAETOS | Accepted | Non-saleable framework root |
 | VECTAETOS Agentic Audit | Accepted | Applied audit architecture |
-| Agentic Audit Solutions | Accepted | Commercial service line |
+| Agentic Audit Solutions | Accepted | Commercial service bridge |
 | EAI | Accepted | Epistemic Audit Interface |
+| Epistemic Audit Interface | Accepted | Non-intervention projection kernel |
 | ContractMesh | Accepted | Operational contract protocol |
 | EAT Ledger | Accepted | Tamper-evident audit trace layer |
 | EAI Artifact | Accepted | Machine-verifiable structural artifact |
-| kappa_trace | Accepted | Closure trace distribution |
+| Human Audit Report | Accepted | Interpretive report layer |
+| kappa_trace | Accepted | Structural trace, not score |
 
 ---
 
-## 3. Reserved Names
+## 3. Reserved, Suspended, and Rejected Names
 
-The following names are reserved but not yet fully specified.
+Reserved names:
 
-| Name | Status | Note |
-|---|---|---|
-| EAI Verifier | Reserved | Future verification tool |
-| ContractMesh Verifier | Reserved | Future contract verifier |
-| Agentic Audit Report | Reserved | Human-facing report layer |
-| VECTAETOS Compatibility Process | Reserved | Future compatibility rules |
-| Agentic Audit Certificate | Reserved | Future signed commercial artifact |
+```text
+EAI Verifier
+ContractMesh Verifier
+Agentic Audit Report
+VECTAETOS Compatibility Process
+Agentic Audit Certificate
+```
+
+Suspended or rejected names:
+
+```text
+AgentLedger = suspended
+Audit Agentic Systems = rejected as main name
+AI Truth Audit = rejected
+Autonomous Audit Agent = rejected
+kappa Score = rejected
+```
 
 Reserved names may not be used as official product claims until specified.
 
 ---
 
-## 4. Rejected or Suspended Names
-
-| Name | Status | Reason |
-|---|---|---|
-| AgentLedger | Suspended | Potential conflict / unclear availability |
-| Audit Agentic Systems | Rejected as main name | Grammatically weaker and less brandable |
-| AI Truth Audit | Rejected | Implies truth production |
-| Autonomous Audit Agent | Rejected | Violates non-agentic boundary |
-| kappa Score | Rejected | Converts kappa_trace into a score |
-
----
-
-## 5. Canonical Principles
-
-The following principles are canonical.
+## 4. Canonical Principles
 
 ```text
 1. VECTAETOS is not a product.
-2. EAI is not an agent.
-3. EAI does not interpret.
-4. EAI does not optimize.
-5. EAI does not decide.
-6. EAI produces artifacts, not verdicts.
-7. kappa_trace is not a score.
-8. Reports are not EAI.
-9. ContractMesh contracts are operational contracts, not legal contracts by default.
-10. Audit is not control.
-11. Visibility is not authority.
-12. Humility is not weakness.
+2. VECTAETOS is not sold.
+3. EAI is not an agent.
+4. EAI does not interpret.
+5. EAI does not optimize.
+6. EAI does not decide.
+7. EAI produces artifacts, not verdicts.
+8. kappa_trace is not a score.
+9. Reports are not EAI.
+10. Artifacts are not recommendations.
+11. ContractMesh contracts are operational contracts, not legal contracts by default.
+12. EAT Ledger records traces; it does not interpret.
+13. Audit is not control.
+14. Visibility is not authority.
+15. Hashes, signatures, and Merkle roots are integrity witnesses, not truth witnesses.
+16. No implementation may outrun ontology.
+17. No anchor may outrun mapping.
+18. No guard may become authority.
 ```
 
 ---
 
-## 6. Current Repository Documents
+## 5. Current Root Documents
 
 | File | Status | Purpose |
 |---|---|---|
-| README.md | Draft v0.1 | Public entry point |
-| PHILOSOPHY.md | Draft v0.1 | Canonical philosophical base |
-| THEORY.md | Draft v0.1 | Formal EAI theory |
-| REPOSITORY_ARCHITECTURE.md | Draft v0.1 | Repository and system architecture |
-| CANONICAL_STATUS.md | Draft v0.1 | Status and anti-drift control |
-| NOTICE.md | Missing | Copyright and attribution notice |
-| TRADEMARKS.md | Missing | Mark usage boundary |
-| LICENSE.md | Missing | License map |
-| CHANGELOG.md | Missing | Version history |
-| CITATION.cff | Missing | Citation metadata |
+| `README.md` | Draft v0.1 | Public entry point |
+| `PHILOSOPHY.md` | Draft v0.1 | Canonical philosophical base |
+| `THEORY.md` | Draft v0.1 | Formal EAI theory |
+| `REPOSITORY_ARCHITECTURE.md` | Draft v0.1 | Repository and system architecture |
+| `CANONICAL_STATUS.md` | Draft v0.1 | Status and anti-drift control |
+| `CHANGELOG.md` | Draft v0.1 | Version and decision history |
+| `NOTICE.md` | Draft v0.1 | Copyright and attribution notice |
+| `TRADEMARKS.md` | Draft v0.1 | Mark usage boundary |
+| `LICENSE.md` | Draft v0.1 | License map and usage boundary |
+| `SECURITY.md` | Draft v0.1 | Technical and conceptual security policy |
+| `REPOSITORY_SCHEMA.md` | Draft v0.1 | Current repository structure map |
+| `ROOT_CLEANUP_PLAN.md` | Draft v0.1 | Non-executive cleanup/refactor map |
+| `REFACTORING_NOTE.md` | Temporary staging note | Historical cleanup/control note |
+| `KOMERCIALIZACIA.md` | Commercial boundary note | VECTAETOS non-saleable / VAA sellable boundary |
+| `VECTAETOS_AGENTIC_AUDIT_HANDOFF_ANCHOR.md` | Handoff anchor v0.1 | Continuity anchor for future chats/models |
 
 ---
 
-## 7. Current Technical Components
+## 6. Current Repository Structure Status
+
+Initial root cleanup phases 1-5 are complete.
+
+```text
+reviews/                         = review records
+docs/architecture/               = architecture maps
+docs/upstream-vectaetos/eai/      = upstream EAI source material
+reference/python/eai/             = EAI reference candidate code
+specs/                            = spec/schema placeholders, not frozen
+examples/                         = sample placeholders, not authoritative
+research/                         = non-canonical research candidates
+legal/                            = repository-specific legal/regulatory scope material
+```
+
+Repository structure is descriptive.
+
+Repository structure is not ontology.
+
+Placeholder is not specification.
+
+Reference code is not production service code.
+
+---
+
+## 7. Review Documents
+
+| File | Status | Purpose |
+|---|---|---|
+| `reviews/CALIBRATION_ANCHOR_REVIEW.md` | Accepted as methodological review | Classifies calibration anchor as non-executive discipline |
+| `reviews/EAI_CORPUS_INVENTORY.md` | Inventory v0.1 | Describes upstream EAI corpus without final decisions |
+| `reviews/EAI_IMPORT_REVIEW.md` | Import Review v0.1 | Accepts EAI for controlled import; not frozen |
+
+Review documents are project memory and import records.
+
+They do not define runtime behavior by themselves.
+
+---
+
+## 8. EAI Import Status
+
+EAI upstream material is accepted for controlled import.
+
+Current source locations:
+
+```text
+docs/upstream-vectaetos/eai/CONSTRAINTS.md
+docs/upstream-vectaetos/eai/DO_NOT_OPTIMIZE.md
+docs/upstream-vectaetos/eai/philosophy.md
+docs/upstream-vectaetos/eai/theory.md
+docs/upstream-vectaetos/eai/mathematics.md
+
+reference/python/eai/__init__.py
+reference/python/eai/implementation.py
+reference/python/eai/encode_v2.py
+reference/python/eai/encode_v3.py
+reference/python/eai/delta.py
+reference/python/eai/spectral.py
+reference/python/eai/kappa.py
+```
+
+Current verdict:
+
+```text
+ACCEPTED FOR IMPORT
+NOT YET FROZEN
+TECHNICAL ADAPTATION REQUIRED
+NO PRODUCT NAMING CONCLUSIONS YET
+```
+
+Required precision questions before `specs/eai-core-v0.1.md` may become canonical:
+
+```text
+1. Transform mode
+2. kappa_trace vs kappa_signature
+3. Delta observable family
+4. R_distance vs R_antisymmetric
+5. Complex spectrum JSON serialization
+6. Fingerprint h outside EAI v0.1 core unless explicitly justified
+```
+
+---
+
+## 9. Current Technical Components
 
 | Component | Status | Notes |
 |---|---|---|
-| EAI Core | Theoretical draft | Needs artifact schema |
-| ContractMesh | Conceptual draft | Needs agent contract schema |
-| EAT Ledger | Conceptual draft | Needs ledger event schema |
-| EAI Artifact | Conceptual draft | Needs JSON schema |
+| EAI Core | Theoretical draft | Requires resolution of precision questions before freeze |
+| EAI reference code | Reference candidate | Located in `reference/python/eai/` |
+| ContractMesh | Conceptual draft | Needs agent contract schema and protocol specification |
+| EAT Ledger | Conceptual draft | Needs ledger event schema and append protocol |
+| EAI Artifact | Conceptual draft | Needs JSON schema and sample artifact |
 | Artifact Verifier | Not started | Required for MVP |
-| Report Template | Not started | Required for first commercial demo |
+| Report Template | Placeholder | Required for first commercial demo |
 | Connectors | Not started | Later phase |
 | Dashboard | Not started | Not part of first MVP |
 
 ---
 
-## 8. Required Schemas for v0.1
+## 10. Specs, Schemas, and Examples
 
-The following schemas are required before technical v0.1 can be considered complete.
-
-```text
-schemas/agent-contract.schema.json
-schemas/agent-event.schema.json
-schemas/transformation-set.schema.json
-schemas/eai-run.schema.json
-schemas/eai-artifact.schema.json
-schemas/audit-ledger-event.schema.json
-schemas/audit-report.schema.json
-```
-
----
-
-## 9. Required Specs for v0.1
+Current placeholder files:
 
 ```text
 specs/eai-core-v0.1.md
-specs/contractmesh-v0.1.md
-specs/eat-ledger-v0.1.md
-specs/audit-artifact-v0.1.md
-specs/agentic-audit-report-v0.1.md
-specs/compatibility-v0.1.md
-specs/invalidity-conditions.md
+specs/eai-artifact.schema.json
+specs/agent-contract.schema.json
+specs/agent-event.schema.json
+specs/audit-report.schema.json
+specs/transformation-set.schema.json
+
+examples/sample-agent-contract.json
+examples/sample-transformation-set.json
+examples/sample-eai-artifact.json
+examples/sample-agentic-audit-report.md
 ```
 
----
-
-## 10. Required Protocols for v0.1
+Status:
 
 ```text
-protocols/non-intervention.md
-protocols/fixed-transformations.md
-protocols/encoding-canonicalization.md
-protocols/relational-matrix.md
-protocols/curvature-delta.md
-protocols/kappa-trace.md
-protocols/artifact-generation.md
-protocols/artifact-verification.md
-protocols/contract-registration.md
-protocols/contract-versioning.md
-protocols/event-signing.md
-protocols/ledger-append.md
-protocols/drift-detection.md
-protocols/report-generation.md
+placeholders exist
+not frozen
+not authoritative
+must not outrun EAI import review
+```
+
+Schema location remains under review:
+
+```text
+JSON schema files currently exist under specs/.
+Future cleanup may move them to schemas/.
 ```
 
 ---
@@ -223,19 +312,21 @@ MVP success condition:
 
 ---
 
-## 12. Commercial Gate
-
-Commercialization may begin only after:
+## 12. Commercial Boundary
 
 ```text
-1. README is stable enough for public visitors.
-2. Philosophy and theory are internally consistent.
-3. Artifact schema exists.
-4. At least one sample artifact exists.
-5. At least one sample report exists.
-6. Legal and trademark notices exist.
-7. The report boundary is explicit.
-8. No file claims legal, financial, or statutory audit.
+VECTAETOS is not sold.
+VECTAETOS Agentic Audit may become applied audit infrastructure.
+Agentic Audit Solutions may sell reports, verification, hosting, connectors, and implementation support.
+```
+
+Commercial language must preserve:
+
+```text
+artifact != report
+verification != certification by default
+traceability != compliance guarantee
+integrity witness != truth witness
 ```
 
 ---
@@ -261,8 +352,6 @@ VECTAETOS Agentic Audit is an autonomous audit agent.
 
 ## 14. Accepted Public Phrases
 
-The following phrases are approved for public use.
-
 ```text
 Verifiable structural auditability for agentic systems.
 Contracts, not prompts.
@@ -275,65 +364,23 @@ Where meaning changes, the change must not disappear.
 
 ---
 
-## 15. Forbidden Public Phrases
-
-The following phrases are forbidden unless explicitly redefined later.
+## 15. Open Questions
 
 ```text
-AI truth engine
-autonomous audit agent
-guaranteed safe agents
-legal audit automation
-financial assurance engine
-kappa score
-agent trust score
-VECTAETOS-certified truth
-fully compliant by design
+1. Final license structure.
+2. Final compatibility process.
+3. Artifact signing and key management.
+4. Transformation set freezing and naming.
+5. Report layer boundaries and mandatory disclaimers.
+6. Commercial boundary between open material and paid verification.
+7. JSON schema placement: specs/ or schemas/.
+8. Whether KOMERCIALIZACIA.md remains root or moves later.
+9. Whether the handoff anchor remains root or moves later.
 ```
 
 ---
 
-## 16. Open Questions
-
-The following questions remain open.
-
-```text
-1. Final license structure:
-   - VEPL for philosophy and papers?
-   - VSL for specs and schemas?
-   - Apache-2.0 for reference code?
-
-2. Final compatibility process:
-   - Who may claim compatibility?
-   - What tests are required?
-   - What is official vs unofficial?
-
-3. Artifact signing:
-   - Which signing method?
-   - Which key management process?
-   - How are signed artifacts published?
-
-4. Transformation sets:
-   - Which basic transformations form v0.1?
-   - How are transformation sets frozen?
-   - How are domain-specific transformation sets named?
-
-5. Report layer:
-   - What is allowed interpretation?
-   - What disclaimers are mandatory?
-   - What report formats are supported?
-
-6. Commercial boundary:
-   - What remains open?
-   - What becomes hosted?
-   - What requires paid verification?
-```
-
----
-
-## 17. Versioning Rule
-
-Changes are classified as:
+## 16. Versioning Rule
 
 ```text
 PATCH:
@@ -341,6 +388,7 @@ PATCH:
 - typo
 - formatting
 - clarification without conceptual change
+- file movement without semantic change
 
 MINOR:
 - new schema fields
@@ -360,7 +408,7 @@ Any major change requires canonical review.
 
 ---
 
-## 18. Freeze Conditions
+## 17. Freeze Conditions
 
 The repository may enter `v0.1-freeze` only when:
 
@@ -368,20 +416,29 @@ The repository may enter `v0.1-freeze` only when:
 README.md exists
 PHILOSOPHY.md exists
 THEORY.md exists
-ARCHITECTURE.md exists
+REPOSITORY_ARCHITECTURE.md exists
 CANONICAL_STATUS.md exists
 NOTICE.md exists
 TRADEMARKS.md exists
 LICENSE.md exists
-at least 3 core schemas exist
-at least 1 sample artifact exists
-at least 1 sample report exists
+SECURITY.md exists
+reviews/EAI_IMPORT_REVIEW.md exists
+at least 3 core schemas exist and are non-placeholder
+at least 1 sample artifact exists and is non-placeholder
+at least 1 sample report exists and is non-placeholder
 invalidity conditions are defined
+artifact/report boundary is explicit
+```
+
+Current status:
+
+```text
+not ready for v0.1-freeze
 ```
 
 ---
 
-## 19. Current Decision
+## 18. Current Decision
 
 Current strategic decision:
 
@@ -390,20 +447,14 @@ Current strategic decision:
 > Build connectors third.  
 > Build dashboard later.
 
-Current commercial decision:
+Current cleanup decision:
 
-> Sell reports, verification, hosting, and integration.  
-> Do not sell VECTAETOS itself.
-
-Current technical decision:
-
-> EAI produces artifacts.  
-> Reports interpret artifacts.  
-> These layers must remain separate.
+> Root cleanup phases 1-5 are complete.  
+> Further work should update status references before filling specs or schemas.
 
 ---
 
-## 20. Final Canonical Reminder
+## 19. Final Canonical Reminder
 
 ```text
 VECTAETOS is not sold.
@@ -413,6 +464,11 @@ EAT Ledger does not interpret.
 Reports are not artifacts.
 Artifacts are not verdicts.
 Visibility is not authority.
+Placeholder is not specification.
+Research is not authority.
+Reference code is not production service code.
 ```
 
 This file is the current anti-drift anchor of the repository.
+
+END
