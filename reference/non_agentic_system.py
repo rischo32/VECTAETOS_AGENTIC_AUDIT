@@ -71,9 +71,11 @@ def _sample_perturbations(rng: np.random.Generator, count: int, scale: float) ->
 
 def _realizable_transition(sigma: np.ndarray, R: np.ndarray, perturbation: np.ndarray) -> Optional[np.ndarray]:
     candidate = sigma + (R @ perturbation)
-    if np.isfinite(candidate).all():
-        return candidate
-    return None
+    if not np.isfinite(candidate).all():
+        return None
+    if np.allclose(candidate, sigma):
+        return None
+    return candidate
 
 
 def _evolve_one_step(
