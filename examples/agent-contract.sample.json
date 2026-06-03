@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1.0",
+  "contract_type": "agent_contract",
+  "contract_id": "contract:customer-support-assistant:2026-06",
+  "issued_at": "2026-06-03T16:30:00Z",
+  "machine_contract": {
+    "agent": {
+      "agent_id": "agent.customer-support-assistant",
+      "agent_name": "Customer Support Assistant",
+      "agent_version": "1.3.0",
+      "runtime_environment": "kubernetes-prod-us-east"
+    },
+    "operational_boundary": {
+      "audit_mode": "non_intervention_audit",
+      "allowed_observer_actions": [
+        "read_logs",
+        "capture_hash",
+        "verify_signature",
+        "append_audit_artifact"
+      ],
+      "prohibited_interventions": [
+        "mutate_prompt",
+        "override_policy",
+        "block_execution",
+        "write_runtime_state"
+      ],
+      "in_scope_components": [
+        "llm-orchestrator",
+        "policy-evaluator",
+        "response-renderer"
+      ],
+      "out_of_scope_components": [
+        "payment-ledger"
+      ]
+    },
+    "evidence_requirements": {
+      "required_artifacts": [
+        "eai_artifact",
+        "transform_set_manifest",
+        "continuity_record"
+      ],
+      "retention_days": 365,
+      "max_collection_lag_seconds": 30
+    }
+  },
+  "human_context": {
+    "business_purpose": "Provide traceable, policy-constrained responses for tier-1 support tickets.",
+    "owner_contact": "ai-governance@vectaetos.example",
+    "notes": "Human context is informational only and must not mutate machine contract fields."
+  }
+}
