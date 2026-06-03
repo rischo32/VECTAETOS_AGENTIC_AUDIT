@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_type": "eai_artifact",
+  "artifact_id": "artifact:customer-support:run-20260603-0001",
+  "contract_id": "contract:customer-support-assistant:2026-06",
+  "transformation_set_id": "xformset:customer-support-v1",
+  "generated_at": "2026-06-03T16:35:00Z",
+  "producer": {
+    "system_id": "audit-pipeline-prod",
+    "run_id": "run-20260603-0001"
+  },
+  "artifact_data": {
+    "input_snapshot_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "output_snapshot_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "transformation_log": [
+      {
+        "transform_id": "t001-canonicalize",
+        "input_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "output_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "executed_at": "2026-06-03T16:34:40Z"
+      },
+      {
+        "transform_id": "t002-redact",
+        "input_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "output_hash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "executed_at": "2026-06-03T16:34:47Z"
+      },
+      {
+        "transform_id": "t003-hash-output",
+        "input_hash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "output_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "executed_at": "2026-06-03T16:34:51Z"
+      }
+    ],
+    "metrics": {
+      "latency_ms": 287.0,
+      "tokens_total": 1421.0
+    }
+  },
+  "human_interpretation": {
+    "analyst": "Priya Nair",
+    "summary": "No continuity break detected; transformation sequence matches approved set.",
+    "confidence": 0.97,
+    "interpretation_created_at": "2026-06-03T16:40:00Z"
+  },
+  "continuity": {
+    "previous_artifact_hash": null,
+    "current_artifact_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "hash_algorithm": "sha256",
+    "signature": {
+      "algorithm": "ed25519",
+      "key_id": "kid-prod-audit-2026-01",
+      "signature_value": "MEQCID0examplehXxM9b2j7vf2Y7c2nHzu5CBa9d1q3weA0cAiBqexample"
+    }
+  },
+  "non_intervention_attestation": {
+    "audit_mode": "non_intervention_audit",
+    "observer_only": true
+  }
+}

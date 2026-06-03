@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1.0",
+  "set_type": "fixed_transformation_set",
+  "set_id": "xformset:customer-support-v1",
+  "machine_transformation_spec": {
+    "source_schema_ref": "https://schemas.vectaetos.io/input/event-envelope-0.1.0.schema.json",
+    "target_schema_ref": "https://schemas.vectaetos.io/eai/eai-artifact-0.1.0.schema.json",
+    "transforms": [
+      {
+        "transform_id": "t001-canonicalize",
+        "sequence": 1,
+        "operation": "canonicalize_json",
+        "deterministic": true,
+        "intervention_allowed": false,
+        "parameters": {
+          "standard": "RFC8785"
+        }
+      },
+      {
+        "transform_id": "t002-redact",
+        "sequence": 2,
+        "operation": "redact_json_pointer",
+        "deterministic": true,
+        "intervention_allowed": false,
+        "parameters": {
+          "paths": [
+            "/user/email",
+            "/user/phone"
+          ],
+          "replacement": "[REDACTED]"
+        }
+      },
+      {
+        "transform_id": "t003-hash-output",
+        "sequence": 3,
+        "operation": "hash_field",
+        "deterministic": true,
+        "intervention_allowed": false,
+        "parameters": {
+          "path": "/payload",
+          "algorithm": "sha256"
+        }
+      }
+    ],
+    "integrity": {
+      "transform_set_hash": "1111111111111111111111111111111111111111111111111111111111111111",
+      "hash_algorithm": "sha256"
+    }
+  },
+  "human_rationale": {
+    "summary": "Sequence enforces canonicalization then PII redaction before hashing/signing.",
+    "change_ticket": "GRC-2147"
+  }
+}
